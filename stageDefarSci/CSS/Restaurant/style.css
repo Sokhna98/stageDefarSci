@@ -1,0 +1,402 @@
+ * {
+    box-sizing: border-box;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    margin-top: 0px;
+    margin-left: 8px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(252, 127, 127, 0.4), rgba(0, 0, 0, 0)), url("images/menu1.jpg");
+    background-size: cover ;
+    background-repeat: repeat;
+    background-attachment: local, fixed;
+}
+
+.header-nav {
+    position: relative;
+    top: 0;  
+    height: 50px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+@media (max-width: 500px){
+    .header-nav {
+        flex-direction: column;
+        height: auto;
+    }
+ }
+.header-nav a {
+    padding: 10px;
+    color: rgba(252, 247, 247, 0.7);
+    font-size: 20px;
+}
+
+.header-tittle {
+    position: relative;
+    top: 50px; 
+    height: 100px; 
+    margin: 250px 0;
+    padding: 25px 0;
+    font-size: 60px;
+    font-style: italic;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+.main {
+    position: absolute;
+    top: 650px;
+    background-color: rgba(172, 49, 49, 0.3); 
+}
+
+h2 {
+    color: rgba(172, 49, 49, 0.9);
+    padding-left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 10px;
+}
+p {
+    color: black;
+    font-family: serif;
+ }
+
+
+
+
+
+
+
+
+
+.bodyMenu{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(252, 127, 127, 0.4), rgba(0, 0, 0, 0)), url("images/menu1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local, fixed;
+}
+.headerMenu {
+    position: relative;
+    top: 0;
+    height:15%;
+    margin: 0;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+.headerMenu h2 {
+    font-size: 50px;
+    font-family: serif;
+    text-align: center;
+    height: 100%;
+    color: black;
+}
+
+.article {
+    position: relative;
+    height: 78%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.article table:nth-child(1){
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 10px;
+}
+.article table:nth-child(2){
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 10px;
+}
+.article table:nth-child(3){
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 10px;
+}
+
+
+.footerMenu {
+    position: relative;
+    height: 7%;
+    margin: 0;
+    padding: 0;
+    font-size: 22px ;
+}
+.footerMenu a {
+    text-decoration: none;
+    color: black;
+}
+.footerMenu a:hover {
+    text-decoration: underline;
+}
+
+.footerM1 {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.6);
+} 
+.footerM2 {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    width: 17%;
+    height: 100%;
+    right: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.6);
+} 
+
+
+
+
+
+
+
+
+.articleContact {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0;
+}
+
+.droite {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 450px;
+    top: 0;
+    right: 0;
+    margin: 0 25px;    
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+fieldset {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+}
+
+fieldset h3 {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    margin: 0 ;
+    padding: 2% 20%;
+    text-align: center;
+    font-size: x-large;
+    font-family: serif;
+    background-color: rgba(128,128,128,0.3);
+
+}
+
+fieldset form {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    margin: 0;
+}
+
+
+.mail{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding: 10px;
+}
+.mail label {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    font-size: 18px;
+    float: left;
+}
+.mail input {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    right: 0;
+    float: right;
+    padding: 0 5px;
+}
+
+.nom{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding: 10px;
+}
+.nom label {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    font-size: 18px;
+    float: left;
+}
+.nom input {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    right: 0;
+    float: right;
+    padding: 0 5px;
+}
+
+.message{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 10px;
+}
+.message label {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    font-size: 18px;
+    float: left;
+}
+.message textarea {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    right: 0;
+    float: right;
+    padding: 10px;
+}
+
+.bouton{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+.boutonSub{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0 2px;
+    background-color:rgba(43, 250, 43, 0.8);
+}
+.boutonRes{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0 2px;
+    background-color: rgba(255, 35, 35, 0.9);
+}
+
+
+
+.gauche {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 450px;
+    top: 0;
+    left: 0;
+    margin: 0 25px;
+    padding: 0 25px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.gauche h3 {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5%;
+    padding: 2% 20%;
+    text-align: center;
+    font-size: x-large;
+    font-family: serif;    
+    background-color: rgba(128,128,128,0.3);
+}
+.gauche h4 {
+    width: 100%;
+    height: 10%;
+    margin: 5% 0 0 0;
+    padding: 2% ;
+    text-align: start;
+    font-size: x-large;
+    font-family: serif;    
+    background-color: rgba(128,128,128,0.3);
+}
+.gauche address {
+    width: 100%;
+    height: 15%;
+    padding: 2% ;
+    text-align: start;
+    font-size: smaller;
+    font-family: sans-serif;    
+    background-color: rgba(128,128,128,0.2);
+}
+.gauche iframe {
+    width: 100%;
+    height: 45%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+.footerContact {
+    position: relative;
+    height: 50px;
+    width: 15%;
+    margin: 0 24px;
+    padding: 1%;
+    text-align: start;
+    font-size: 22px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+.footerContact a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.footerContact a:hover {
+    text-decoration: underline;
+}
+
+.bodyContact {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(252, 127, 127, 0.4), rgba(0, 0, 0, 0)), url("images/menu1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local, fixed;
+}
