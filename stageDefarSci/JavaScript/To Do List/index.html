@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <header>
+            <h1>Sokhna's To Do List</h1>
+        </header>
+        <form action="">
+            <input type="text" class="input" placeholder="Ajouter une nouvelle tache">
+            <button type="submit" class="bouton-ajouter">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filtrer-taches">
+                    <option value="all">Toutes les taches</option>
+                    <option value="completed">Taches terminées</option>
+                    <option value="uncompleted">Taches non terminées</option>
+                </select>
+            </div>
+        </form>
+        <div class="container">
+            <ul class="liste-taches"></ul>
+        </div>
+
+        <script src="todolist.js"></script>
+    </body>
+</html>
