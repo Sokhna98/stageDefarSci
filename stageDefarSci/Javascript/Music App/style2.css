@@ -1,0 +1,124 @@
+body {
+    background-color: lightgreen;
+    transition: background-color .5s;
+}
+
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+    
+.icone-musique {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: URL(
+       "https://source.unsplash.com/Qrspubmx6kE/640x360");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+    
+.musique-courante {
+    font-size: 1.5rem;
+}
+    
+.nom-musique {
+    font-size: 3rem;
+}
+    
+.nom-chanteur {
+    font-size: 1.5rem;
+}
+    
+.boutons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    
+.musique-en-pause,
+.musique-precedente,
+.musique-suivante {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+    
+.musique-en-pause:hover,
+.musique-precedente:hover,
+.musique-suivante:hover {
+    opacity: 1.0;
+}
+    
+.barre-horizontale {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defiler-musique, .defiler-volume {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.defiler-musique::-webkit-slider-thumb,
+.defiler-volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+    
+.defiler-musique:hover,
+.defiler-volume:hover {
+    opacity: 1.0;
+}
+    
+.defiler-musique {
+    width: 60%;
+}
+    
+.defiler-volume {
+    width: 30%;
+}
+
+.temps-courant,
+.duree-totale {
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
