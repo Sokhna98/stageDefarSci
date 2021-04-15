@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(120deg, #9e5275, #3c6e70 );
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {   
+    height: 60vh;
+    width: 40vw;
+    border: 3mm ridge rgba(170, 50, 220, .6);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1%;
+}
+
+.element-precedent, .element-courant{
+    height: 50%;
+}
+
+.output, button, .titre{
+    border: 0.7mm ridge rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 3vw;
+}
+
+button {
+    background-color: rgba(148, 117, 161, 0.8);
+    font-size: 2vw;
+}
+
+button:hover {
+    background-color: rgba(146, 58, 184, 0.8);
+}
+
+.output {
+    height: 25%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: white;
+    text-align: right;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.chiffres {
+    height: 100%;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.operateurs {
+    height: 100%;
+    width: 25%;
+}
+
+.boutons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boutons .operateur, .boutons .chiffre {
+    width: 100%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chiffre button, .operateur button {
+    height: 100%;
+    margin: auto;
+}
+
+.chiffre button {
+    width: 32%;
+}
+
+.operateur button {
+    width: 46%;
+}
+
+.bas-droite button {
+    width: 100%;
+}
