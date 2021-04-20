@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokhna's Quizz App</title>
+    <link rel="stylesheet" href="jouer.css">
+</head>
+<body>
+    <div class="container-jouer">
+        <div class="header-jouer">
+            <div class="left">
+                <p id="compteur-question">Question</p>
+                <div id="progression">
+                    <div id="barre-de-progression"></div>
+                </div>
+            </div>
+            <div class="right">
+                <p>Score</p>
+                <h2 id="compteur-score">0</h2>
+            </div>
+        </div>
+        <h2 id="question"></h2>
+        <div class="reponses">
+            <div class="choix">
+                <p class="prefix"></p>
+                <p class="texte" data-number="1"></p>
+            </div>
+            <div class="choix">
+                <p class="prefix"></p>
+                <p class="texte" data-number="2"></p>
+            </div>
+            <div class="choix">
+                <p class="prefix"></p>
+                <p class="texte" data-number="3"></p>
+            </div>
+            <div class="choix">
+                <p class="prefix"></p>
+                <p class="texte" data-number="4"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="jouer.js"></script>
+</body>
+</html>

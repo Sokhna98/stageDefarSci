@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokhna's Quizz App</title>
+    <link rel="stylesheet" href="end.css">
+</head>
+<body>
+    <div class="container">
+        <div class="fin">
+            <h1 id="scoreFinal"></h1>
+            <a href="enregistrer.html">Enregistrer</a>
+            <a href="jouer.html">Jouer</a>
+            <a href="index.html">Retour à l'accueil</a>
+        </div>
+    </div>
+
+    <script>
+        const score_final = document.getElementById('scoreFinal')
+        const scoreRecent = localStorage.getItem('scoreRecent')
+        score_final.innerText = "Score final: "+scoreRecent
+    </script>
+</body>
+</html>

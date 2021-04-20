@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style de la page de fin*/
+.fin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    background: linear-gradient(45deg, #fa8b8b, #9593ff) center center no-repeat;
+}
+
+.fin h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.fin a {
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    background-color:  rgba(240, 128, 128, 1);
+    color: white;
+    box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+    border-radius: 10px;
+}
+
+.fin a:hover {
+    background-color: white;
+    color:  rgba(240, 128, 128, 1);
+    transform: scale(1.2);
+}
+
+
+
+.container {    
+    background: rgba(240, 128, 128, 0.2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-save {
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 128, 128, 0.7);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-save h1 {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.container-save input {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 2.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+    border-radius: 10px;
+}
+
+.container-save .submit {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container-save button {
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    font-size: 1rem;
+    color:  rgba(240, 128, 128, 1);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container-save button:hover {
+    transform: scale(1.1);
+}
+
+.container-save .submit #save {
+    margin-left: 4rem;
+}
+
+.container-save .submit #unsave {
+    margin-right: 4rem;
+}
